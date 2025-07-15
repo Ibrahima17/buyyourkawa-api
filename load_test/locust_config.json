@@ -1,0 +1,6 @@
+{
+  "users_total": 10000,
+  "users_concurrent": 300,
+  "load_pattern": "ramp-up: 10min -> plateau: 30min -> down: 5min",
+  "user_profile": "Connexion, récupération token JWT, accès client"
+}
