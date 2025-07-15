@@ -47,7 +47,7 @@ Il intègre l’authentification JWT, la validation des données, le monitoring 
 - `load_test/locust_results.png` : captures d’écran des graphiques et stats.
 - Rapport CSV disponible si besoin.
 
-### 7️⃣ **Code source sur GitHub**
+### 7 **Code source sur GitHub**
 
 ---
 
