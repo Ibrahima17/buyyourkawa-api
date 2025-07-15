@@ -1,7 +1,7 @@
 from locust import HttpUser, task, between
 
 class BuyYourKawaUser(HttpUser):
-    wait_time = between(1, 3)  # Temps d'attente entre chaque requête
+    wait_time = between(1, 3) 
 
     @task
     def read_root(self):

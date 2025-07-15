@@ -2,19 +2,19 @@
 
 ```mermaid
 flowchart TD
-    A[Client Frontend] -->|Envoie requête| B[API FastAPI]
-    B --> C{Validation Pydantic}
-    C -->|✅ Données valides| D[Contrôleur API]
-    C -->|❌ Données invalides| E[Erreur 422 Unprocessable Entity]
+    Front[Client Frontend] -->|Envoie requête| API[API FastAPI]
+    API --> Validate{Validation Pydantic}
+    Validate -->|Valide| Controller[Contrôleur API]
+    Validate -->|Invalide| Error422[Erreur 422 Unprocessable Entity]
 
-    D --> F[JWT : Vérification signature & expiration]
-    F -->|✅ Valide| G[Accès accordé]
-    F -->|❌ Invalide/expiré| H[401 Unauthorized]
+    Controller --> JWT[JWT Vérification]
+    JWT -->|Valide| Access[Accès accordé]
+    JWT -->|Expiré/Invalide| Error401[401 Unauthorized]
 
-    G --> I[Base de données (Simulée)]
-    I --> J[Enregistrement OK]
+    Access --> DB[Base de données Simulée]
+    DB --> Save[Enregistrement OK]
 
-    G --> K[Monitoring Prometheus]
-    K --> L[Métriques exposées]
+    Access --> Metrics[Monitoring Prometheus]
+    Metrics --> Exposed[Métriques exposées]
 
-    J --> M[Logs RabbitMQ (si activé)]
+    Save --> Queue[RabbitMQ Logs]

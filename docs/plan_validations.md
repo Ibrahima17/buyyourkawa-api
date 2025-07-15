@@ -1,4 +1,4 @@
-# ✅ Plan de validations – Fiabilité des données
+# Plan de validations – Fiabilité des données
 
 | Vérification                  | Niveau     | Méthode                     | Outil / Librairie         |
 |-------------------------------|------------|-----------------------------|---------------------------|
