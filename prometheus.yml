@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s  # Intervalle de collecte des métriques
+
+scrape_configs:
+  - job_name: 'buyyourkawa_api'
+    static_configs:
+      - targets: ['localhost:8000']
