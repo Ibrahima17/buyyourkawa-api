@@ -10,4 +10,4 @@
 | Cohérence des logs Prometheus | Backend    | Middleware de monitoring    | `prometheus_client`       |
 | Sécurité des flux             | Backend    | HTTPS, OAuth2, JWT signé    | FastAPI Security + SSL    |
 | Tests automatiques            | Backend    | Vérification requêtes API   | `pytest`, `httpx`         |
-| Validation côté Front (bonus) | Frontend   | Champs obligatoires, Regex  | Formulaire JS / HTML5     |
+| Validation côté Front         | Frontend   | Champs obligatoires, Regex  | Formulaire JS / HTML5     |

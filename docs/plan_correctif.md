@@ -1,6 +1,6 @@
-# Plan d’actions correctives – Exemple
+# Plan d’actions correctives 
 
-| Endpoint   | KPI Observé | Seuil    | Problème                  | Action Corrective                    | Délai |
+| Endpoint   | KPI Observé  | Seuil    | Problème                  | Action Corrective                    | Délai |
 |------------|--------------|----------|---------------------------|--------------------------------------|-------|
 | `/token`   | 980 ms       | < 300 ms | Temps de réponse trop long| Mise en cache Redis                  | 48h   |
 | `/client`  | 5% erreurs   | < 1 %    | Trop d’erreurs 500        | Validation stricte des entrées       | 72h   |
